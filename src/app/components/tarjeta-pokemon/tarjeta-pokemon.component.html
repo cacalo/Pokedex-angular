@@ -1,0 +1,9 @@
+<div id="container" (click)="selected()" [ngClass]="{seleccionado: seleccionado}">
+  <img id="flecha" src="./../../../assets/img/flecha.png" [ngClass]="{invisible: !seleccionado}">
+  <div id="tarjeta" [ngClass]="{seleccionado: seleccionado}">
+    <img src="">
+    <img src="{{fullData.sprites.front_default}}" *ngIf="fullData">
+    <span>No. {{id}}</span>
+    <span>{{data.name | titlecase}}</span>
+  </div>
+</div>
