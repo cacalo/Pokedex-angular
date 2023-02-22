@@ -32,7 +32,6 @@
   ::-webkit-scrollbar{
     width: 12px;
     margin-right: 20px;
-    cursor: pointer;
   }
   ::-webkit-scrollbar-thumb{
     background-color: #e9563d;
@@ -42,17 +41,18 @@
     border-left: 1.5px solid transparent;
     border-right: 1.5px solid transparent;
     background-clip: padding-box;
-    cursor: pointer;
+    cursor:grab;
   }
   ::-webkit-scrollbar-track {
     border: solid #90ace7 2px;
+    cursor: pointer;
     background: repeating-linear-gradient(
-    0deg,
-    #276d83,
-    #276d83 5px,
-    #1c4760 7px,
-    #1c4760 9px
-  );
+      0deg,
+      #276d83,
+      #276d83 5px,
+      #1c4760 7px,
+      #1c4760 9px
+    );
   }
 }
 
