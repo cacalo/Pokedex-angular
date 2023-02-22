@@ -3,13 +3,13 @@ $tamaño-borde-grande: 8px;
 
 #container{
   position: relative;
-  margin: auto calc($tamaño-borde-grande * 2);
   aspect-ratio: 1;
   border: solid $tamaño-borde #8abeed;
   border-radius: 15px;
   display: grid;
   justify-items: center;
   align-items: center;
+  outline: solid 12px  #fae45d;
   background: repeating-linear-gradient(
     0deg,
     #f0f4f5,
@@ -17,20 +17,6 @@ $tamaño-borde-grande: 8px;
     #c7d9ee 15px,
     #c7d9ee 25px
   );
-  ::before{
-    content: "";
-    position: absolute;
-    background-color:  #fae45d;
-    top: calc($tamaño-borde-grande * -1 - $tamaño-borde);
-    left: calc($tamaño-borde-grande * -1 - $tamaño-borde);
-    width: calc(100% + $tamaño-borde-grande * 2 + $tamaño-borde * 2);
-    height: calc(100% + $tamaño-borde-grande * 2 + $tamaño-borde * 2);
-    z-index: -1;
-    border-radius: 15px;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3)
-  }
 }
 
 img{

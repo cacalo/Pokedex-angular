@@ -14,6 +14,34 @@ header{
 
 footer{
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
   height: 30px;
   background-color: #629ddf;
+  color: white;
+  padding-right: 20px;
+  a{
+    color: white;
+  }
+  p{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  kbd{
+    background-color: #8a8582;
+    border-radius: 50%;
+    height: 26px;
+    line-height: 26px;
+    aspect-ratio: 1;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 10px;
+    margin-right: 5px;
+    user-select: none;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  }
 }

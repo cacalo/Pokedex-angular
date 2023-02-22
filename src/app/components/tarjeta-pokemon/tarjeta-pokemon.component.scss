@@ -6,6 +6,7 @@
   gap: 0.5rem;
   position: relative;
   overflow:visible;
+  z-index: 0;
 }
 
 #tarjeta{
@@ -19,7 +20,7 @@
 }
 
 #tarjeta.seleccionado{
-  background-color: var.$principal-acento !important;
+  background-color: var.$principal-acento;
   -webkit-box-shadow: inset 0px 0px 7px 4px var.$principal;
   -moz-box-shadow: inset 0px 0px 7px 4px var.$principal;
   box-shadow: inset 0px 0px 7px 4px var.$principal;
@@ -28,6 +29,7 @@
 #flecha{
   margin-left: 8px;
   height: 20px;
+  z-index: 1;
 }
 
 img:first-of-type{
@@ -36,6 +38,7 @@ img:first-of-type{
 
 img:last-of-type{
   max-height: 40px;
+  z-index: 1;
 }
 
 span{
@@ -52,7 +55,7 @@ span{
     top: -4px;
     left: 0px;
     background-color: #da4443;
-    z-index: -1;
+    z-index: -2;
     border-radius: 5px;
    }
 }
