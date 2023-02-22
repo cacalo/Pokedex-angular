@@ -7,7 +7,7 @@ import { Pokemon } from '../interfaces/pokemon';
 })
 export class PokemonService {
 
-  async getByPage(page: number, size: number = 20):Promise<Resultado[]>{
+  async getByPage(page: number, size: number = 40):Promise<Resultado[]>{
     const offset = (page-1)*size;
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${size}&offset=${offset}`)
     const resJson = await res.json();

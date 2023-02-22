@@ -27,7 +27,7 @@
     #5576c5 170px,
     #5576c5 190px,
   );
-  height: calc(100dvh - 90px);
+  height: calc(100dvh - 110px);
 
   ::-webkit-scrollbar{
     width: 12px;
@@ -70,4 +70,8 @@
 
 app-foto-pokemon{
   z-index: 1;
+}
+
+#spinner{
+  height: 50px;
 }

@@ -12,11 +12,14 @@
 #tarjeta{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: var.$principal;
   border-radius: 25px 5px 5px 25px;
   cursor: pointer;
   flex-grow: 1;
+  span:first-of-type{
+    width: 100px;
+  }
 }
 
 #tarjeta.seleccionado{
@@ -32,11 +35,15 @@
   z-index: 1;
 }
 
-img:first-of-type{
-
+#circulo{
+  border-radius: 50%;
+  height: 25px;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.125);
+  margin-left: 8px;
 }
 
-img:last-of-type{
+img{
   max-height: 40px;
   z-index: 1;
 }
@@ -44,6 +51,7 @@ img:last-of-type{
 span{
   font-size: larger;
   user-select: none;
+  font-size: 1.5rem;
 }
 
 #container.seleccionado{
