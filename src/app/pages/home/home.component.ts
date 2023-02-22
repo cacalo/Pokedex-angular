@@ -25,9 +25,7 @@ export class HomeComponent implements OnInit{
   destroy$ = this.destroy.asObservable();
 
   ngOnInit(): void {
-    this.cargarLista()
-    fromEvent(window, 'scroll').pipe(takeUntil(this.destroy$))
-			.subscribe((e: Event) => console.log(this.getYPosition(e)));
+    this.cargarLista();
   }
 
   getYPosition(e:Event): number {

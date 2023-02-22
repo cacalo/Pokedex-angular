@@ -13,7 +13,6 @@ export class TarjetaPokemonComponent implements OnInit{
   constructor(private pokemon:PokemonService){}
 
  ngOnInit(): void {
-  console.log(this.data.url);
   this.id = this.data.url.substring(34, this.data.url.length-1);
   this.pokemon.getById(this.id).then(res => this.fullData = res);
  }
