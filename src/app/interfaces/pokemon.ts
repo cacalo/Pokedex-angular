@@ -311,7 +311,12 @@ export interface Stat {
 
 export interface Type {
   slot: number;
-  type: Type;
+  type: TypeDetail;
+}
+
+export interface TypeDetail {
+  name: string;
+  url: string;
 }
 
 export interface Generation {

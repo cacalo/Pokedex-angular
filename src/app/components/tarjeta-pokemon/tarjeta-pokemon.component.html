@@ -2,8 +2,8 @@
   <img id="flecha" src="./../../../assets/img/flecha.png" [ngClass]="{invisible: !seleccionado}">
   <div id="tarjeta" [ngClass]="{seleccionado: seleccionado}">
     <div id="circulo"></div>
-    <img src="{{fullData.sprites.front_default}}" *ngIf="fullData">
+    <img *ngIf="fullData" src="{{fullData.sprites.front_default}}" >
     <span>No. {{id}}</span>
-    <span>{{data.name | titlecase}}</span>
+    <span *ngIf="data">{{data.name | titlecase}}</span>
   </div>
 </div>

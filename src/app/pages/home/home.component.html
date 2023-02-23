@@ -1,7 +1,4 @@
 <main id="container">
-  <div>
-
-  </div>
   <app-foto-pokemon
     [src]="pokemonSeleccionado?.sprites?.front_default"
     [alt]="pokemonSeleccionado?.name">
@@ -16,4 +13,11 @@
     </app-tarjeta-pokemon>
     <img src="./../../../assets/img/spinner.svg" alt="Cargando" id="spinner" *ngIf="cargando">
   </div>
+  <app-detalle
+    [pokemon]="pokemonSeleccionado"
+    [abierto]="aperturaDetalle"
+    (cambiarEstadoApertura)="aperturaDetalle = !aperturaDetalle"
+    [ngClass]="{abierto: aperturaDetalle}"
+    >
+  </app-detalle>
 </main>

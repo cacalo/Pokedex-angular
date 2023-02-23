@@ -1,5 +1,4 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { fromEvent, Subject, takeUntil } from 'rxjs';
 import { Resultado } from 'src/app/interfaces/pokeApi';
 import { Pokemon } from 'src/app/interfaces/pokemon';
 import { PokemonService } from 'src/app/services/pokemon.service';
@@ -12,17 +11,13 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class HomeComponent implements OnInit{
   @ViewChild('tarjetas') tarjetasElement!:ElementRef;
 
-  constructor(
-    private pokemon: PokemonService,
-){}
+  constructor(private pokemon: PokemonService){}
 
   listaPokemons:Resultado[] = []
   pokemonSeleccionado:Pokemon|undefined;
   pagina:number = 1;
   cargando: boolean = false;
-
-  destroy = new Subject();
-  destroy$ = this.destroy.asObservable();
+  aperturaDetalle: boolean = false;
 
   ngOnInit(): void {
     this.cargarLista();
@@ -40,7 +35,6 @@ export class HomeComponent implements OnInit{
     this.cargando = false;
   }
 
-
   onScroll(e:any){
     if(
       Math.round(
@@ -50,6 +44,5 @@ export class HomeComponent implements OnInit{
         this.cargarLista()
       }
   }
-
 
 }
