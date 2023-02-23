@@ -1,3 +1,5 @@
+@use "./.././../../assets/styles/var.scss";
+
 #container {
   height: 600px;
   width: 95vw;
@@ -14,9 +16,8 @@
   display: grid;
   grid-template-rows: 1fr 3fr 3fr;
   align-items: center;
-
   .area {
-    padding-left: 56vw;
+    padding-left: 54vw;
     padding-right: 10px;
     display: flex;
     align-items: center;
@@ -42,12 +43,10 @@
       #cce486 2px,
       #bfd678 2px,
       #bfd678 4px,
-
     );
-    ;
   }
 
-  #datosContainer {
+  #caracteristicasContainer {
     padding: 20px;
     .etiqueta {
       background-color: #68bcea;
@@ -92,7 +91,7 @@
 }
 
 button {
-  background-color: #f4e4a6;
+  background-color: var.$principal;
   border: unset;
   cursor: pointer;
   border-radius: 0 45px 45px 0;
@@ -103,12 +102,11 @@ button {
       transition-timing-function: linear;
       scale: 1.1;
     }
+    &.girar {
+      margin-left: auto;
+      rotate: 180deg;
+    }
   }
-}
-
-.girar {
-  margin-left: auto;
-  rotate: 180deg;
 }
 
 #backdrop{
@@ -119,10 +117,9 @@ button {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
-  z-index:-1
-}
-
-.escondido{
-  pointer-events: none;
-  opacity: 0;
+  z-index:-1;
+  &.escondido{
+    pointer-events: none;
+    opacity: 0;
+  }
 }

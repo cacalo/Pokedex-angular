@@ -2,10 +2,10 @@
 <div id="container">
   <div id="datos">
     <div class="area">
-      <app-tarjeta-pokemon [fullData]="pokemon"></app-tarjeta-pokemon>
+      <app-tarjeta-pokemon [fullData]="pokemon" [seleccionado]="true"></app-tarjeta-pokemon>
     </div>
     <div class="area">
-      <div id="datosContainer">
+      <div id="caracteristicasContainer">
         <p><span class="etiqueta">Tipo</span><span *ngFor="let tipo of pokemon?.types" class="tipo">{{tipo.type.name | uppercase}}</span></p>
         <p><span class="etiqueta">Altura</span> {{pokemon?.height}}'</p>
         <p><span class="etiqueta">Peso</span> {{pokemon?.weight}} lbs.</p>

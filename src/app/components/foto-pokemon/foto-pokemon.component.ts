@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./foto-pokemon.component.scss']
 })
 export class FotoPokemonComponent {
-  @Input() src:string | undefined = "#";
-  @Input() alt:string | undefined= "";
+  @Input() src:string | undefined;
+  @Input() alt:string | undefined;
 }
