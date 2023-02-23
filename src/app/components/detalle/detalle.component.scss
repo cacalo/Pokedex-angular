@@ -17,7 +17,7 @@
   grid-template-rows: 1fr 3fr 3fr;
   align-items: center;
   .area {
-    padding-left: 54vw;
+    padding-left: 55vw;
     padding-right: 10px;
     display: flex;
     align-items: center;
@@ -60,10 +60,13 @@
     .tipo {
       padding: 0 5px;
       margin: 0 2px;
-      background-color: rgb(65, 65, 65);
+      background-color: var.$texto;
       border-radius: 4px;
       color: white;
       font-size: medium;
+    }
+    p{
+      color:var.$texto;
     }
   }
 
@@ -76,6 +79,7 @@
     height: 80%;
     p{
       margin: 10px 5px;
+      color:var.$texto;
     }
     div {
       background-color: #d6edc3;
@@ -118,8 +122,9 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   z-index:-1;
-  &.escondido{
-    pointer-events: none;
-    opacity: 0;
-  }
+}
+
+.escondido{
+  pointer-events: none;
+  opacity: 0;
 }

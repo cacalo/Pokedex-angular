@@ -1,10 +1,7 @@
-$tamaño-borde: 5px;
-$tamaño-borde-grande: 8px;
-
 #container{
   position: relative;
   aspect-ratio: 1;
-  border: solid $tamaño-borde #8abeed;
+  border: solid 5px #8abeed;
   border-radius: 15px;
   display: grid;
   justify-items: center;

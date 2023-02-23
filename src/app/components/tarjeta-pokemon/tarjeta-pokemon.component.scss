@@ -7,6 +7,7 @@
   position: relative;
   overflow:visible;
   z-index: 0;
+  max-height: 800px;
 }
 
 #tarjeta{
@@ -34,6 +35,9 @@
   margin-left: 8px;
   height: 20px;
   z-index: 1;
+  &.invisible{
+    opacity: 0;
+  }
 }
 
 #circulo{
@@ -53,6 +57,7 @@ span{
   font-size: larger;
   user-select: none;
   font-size: 1.5rem;
+  color:var.$texto;
 }
 
 #container.seleccionado{
@@ -69,6 +74,4 @@ span{
    }
 }
 
-.invisible{
-  opacity: 0;
-}
+
