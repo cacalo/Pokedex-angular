@@ -12,14 +12,14 @@
 #tarjeta{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   background-color: var.$principal;
   border-radius: 25px 5px 5px 25px;
   padding-right: 2rem;
   cursor: pointer;
   width: 100%;
   span:first-of-type{
-    width: 80px;
+    width: 95px;
   }
 }
 

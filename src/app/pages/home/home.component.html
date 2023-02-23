@@ -1,7 +1,9 @@
 <main id="container">
   <app-foto-pokemon
     [src]="pokemonSeleccionado?.sprites?.front_default"
-    [alt]="pokemonSeleccionado?.name">
+    [alt]="pokemonSeleccionado?.name"
+    [ngClass]="{levantado: aperturaDetalle}"
+    >
   </app-foto-pokemon>
   <div id="tarjetasContainer" #tarjetas (scroll)="onScroll($event)">
       <app-tarjeta-pokemon
