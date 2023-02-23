@@ -45,4 +45,10 @@ export class HomeComponent implements OnInit{
       }
   }
 
+  tarjetaClickeada(e:Pokemon){
+    if(this.pokemonSeleccionado?.name === e.name)
+      return this.aperturaDetalle = !this.aperturaDetalle;
+    return this.pokemonSeleccionado = e;
+  }
+
 }

@@ -7,7 +7,7 @@
       <app-tarjeta-pokemon
       *ngFor="let pokemon of listaPokemons"
       [data]="pokemon"
-      (clicked)="pokemonSeleccionado = $event"
+      (clicked)="tarjetaClickeada($event)"
       [seleccionado]="pokemonSeleccionado?.name === pokemon.name"
       >
     </app-tarjeta-pokemon>

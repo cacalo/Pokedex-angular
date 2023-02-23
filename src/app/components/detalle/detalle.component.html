@@ -1,4 +1,4 @@
-<div id="backdrop" [ngClass]="{escondido: !abierto}" (click)="cambiarEstadoApertura.emit()"></div>
+<div id="backdrop" [ngClass]="{escondido: !abierto}" (click)="cambiarAbierto()"></div>
 <div id="container">
   <div id="datos">
     <div class="area">
@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <button (click)="cambiarEstadoApertura.emit()">
+  <button (click)="cambiarAbierto()">
     <img src="./../../../assets/img/flecha.png" alt="abrir/cerrar detalle" [ngClass]="{girar: abierto}" id="flecha">
   </button>
 </div>

@@ -15,10 +15,11 @@
   gap: 2rem;
   background-color: var.$principal;
   border-radius: 25px 5px 5px 25px;
+  padding-right: 2rem;
   cursor: pointer;
-  flex-grow: 1;
+  width: 100%;
   span:first-of-type{
-    width: 100px;
+    width: 80px;
   }
 }
 

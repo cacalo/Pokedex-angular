@@ -24,4 +24,8 @@ export class DetalleComponent implements OnChanges {
     }
  }
 
+ cambiarAbierto(){
+  if(this.pokemon) this.cambiarEstadoApertura.emit();
+ }
+
 }

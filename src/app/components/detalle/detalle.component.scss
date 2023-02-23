@@ -23,6 +23,7 @@
     height: 100%;
   }
   .area:first-child {
+    flex-grow: 1;
     background-color: #bfc3ce;
     background-image: linear-gradient(45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4),
     linear-gradient(-45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4);
@@ -94,7 +95,7 @@ button {
   background-color: #f4e4a6;
   border: unset;
   cursor: pointer;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 45px 45px 0;
   img {
     height: 100px;
     transition: 0.3s;
