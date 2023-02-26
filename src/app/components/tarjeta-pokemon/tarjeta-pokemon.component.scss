@@ -8,6 +8,19 @@
   overflow:visible;
   z-index: 0;
   max-height: 800px;
+  &.seleccionado{
+    ::before{
+      content: "";
+      position: absolute;
+      height: 120%;
+      width: calc(100% + 8px );
+      top: -4px;
+      left: 0px;
+      background-color: #da4443;
+      z-index: -2;
+      border-radius: 5px;
+     }
+  }
 }
 
 #tarjeta{
@@ -19,17 +32,20 @@
   padding-right: 2rem;
   cursor: pointer;
   width: 100%;
+  font-size: larger;
+  color:var.$texto;
   span:first-of-type{
     width: 95px;
   }
+  &seleccionado{
+    background-color: var.$principal-acento;
+    -webkit-box-shadow: inset 0px 0px 7px 4px var.$principal;
+    -moz-box-shadow: inset 0px 0px 7px 4px var.$principal;
+    box-shadow: inset 0px 0px 7px 4px var.$principal;
+  }
 }
 
-#tarjeta.seleccionado{
-  background-color: var.$principal-acento;
-  -webkit-box-shadow: inset 0px 0px 7px 4px var.$principal;
-  -moz-box-shadow: inset 0px 0px 7px 4px var.$principal;
-  box-shadow: inset 0px 0px 7px 4px var.$principal;
-}
+
 
 #flecha{
   margin-left: 8px;
@@ -54,24 +70,7 @@ img{
 }
 
 span{
-  font-size: larger;
   user-select: none;
-  font-size: 1.5rem;
-  color:var.$texto;
-}
-
-#container.seleccionado{
-  ::before{
-    content: "";
-    position: absolute;
-    height: 120%;
-    width: calc(100% + 8px );
-    top: -4px;
-    left: 0px;
-    background-color: #da4443;
-    z-index: -2;
-    border-radius: 5px;
-   }
 }
 
 
