@@ -1,0 +1,51 @@
+#container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  &.seleccionado::before{
+    position: absolute;
+    content: "";
+    width: calc(100% + 8px);
+    height: 120%;
+    left: 0px;
+    background-color: #da4443;
+    z-index: -1;
+    border-radius: 5px;
+  }
+}
+
+#flecha{
+  position: absolute;
+  height: 20px;
+  padding: 0 10px;
+}
+
+#tarjeta{
+  display: flex;
+  align-items: center;
+  background-color:#fceab8;
+  border-radius: 25px 5px 5px 25px;
+  width: 90%;
+  font-size: larger;
+  padding-left: 5px;
+  margin-left: 30px;
+  gap: 1rem;
+  &.seleccionado{
+    background-color: #f49545;
+    -webkit-box-shadow: inset 0px 0px 7px 4px #fceab8;
+    -moz-box-shadow: inset 0px 0px 7px 4px #fceab8;
+    box-shadow: inset 0px 0px 7px 4px #fceab8;
+  }
+};
+
+#circulo{
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+img{
+  max-height: 40px;
+}
