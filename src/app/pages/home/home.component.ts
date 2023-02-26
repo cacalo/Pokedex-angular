@@ -55,7 +55,6 @@ export class HomeComponent implements OnInit {
 
   cambiarEstadoDetalle(){
     if(this.pokemonSeleccionado) this.detalle = !this.detalle;
-    console.log(this.detalle)
   }
 
 }
